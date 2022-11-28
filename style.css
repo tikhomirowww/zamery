@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background: url(https://c4.wallpaperflare.com/wallpaper/73/101/82/nature-landscape-sunset-dark-wallpaper-preview.jpg); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    overflow-y: hidden;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: lightblue;
+    background-color: #0a2745;
+    height: 100px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+.info_block{
+    background-color: rgb(10, 39, 69, .8);
+    padding: 10px;
+    border-radius: 20px;
+    width: 350px;
+    height: 130px;
+    font-size: 25px;
+}
+.info_block p{
+    line-height: 35px;
+    color: lightblue;
+}
+
+.bg{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* adaptive styles */
+@media all and (max-width: 480px){
+    header{
+        font-size: 30px;
+    }
+    .info_block p{
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 360px){
+    .info_block{
+        width: 260px;
+    }
+}
